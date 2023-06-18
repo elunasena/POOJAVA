@@ -1,0 +1,13 @@
+
+public class TestReferencia {
+
+	public static void main(String[] args) {
+
+		Cuenta c1 = new Cuenta();
+		c1.saldo = 100;
+		Cuenta c2 = new Cuenta();
+		c2 = c1;
+
+	}
+
+}

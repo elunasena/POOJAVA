@@ -1,0 +1,21 @@
+
+public class myBanck {
+
+	public static void main(String[] args) {
+		
+		Cuenta c1 = new Cuenta();
+		c1.numero = 1234;
+		c1.saldo = 100.5;
+		Cuenta c2 = new Cuenta();
+		c2.numero = 1234;
+		c2.saldo = 1000;
+		
+		System.out.println(c1);
+		System.out.println(c1.numero);
+		
+		System.out.println(c2);
+		System.out.println(c2.saldo);
+		
+	}
+	
+}

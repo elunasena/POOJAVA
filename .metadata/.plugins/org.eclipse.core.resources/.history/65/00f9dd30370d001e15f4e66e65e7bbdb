@@ -1,0 +1,12 @@
+
+public class myBanck {
+
+	public static void main(String[] args) {
+		
+		Cuenta C1 = new Cuenta();
+		C1.numero = 1234;
+		C1.saldo = 100.5;
+		
+	}
+	
+}
