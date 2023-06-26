@@ -4,18 +4,17 @@ public class TestReferencia2 {
 	public static void main(String[] args) {
 		
 		Cliente cliente1 = new Cliente();
-		cliente1.nombre = "Esteban";
-		cliente1.telefono = "301452";
-		cliente1.documento="1214718";
+		cliente1.setNombre("Esteban");
+		cliente1.setDocumento("1214718");
 		
 		// Se instancia la cuenta c1
 		Cuenta c1 = new Cuenta();
-		c1.numero = 1111;
+		c1.setNumero(1111);
 		c1.saldo = 100.5;
 		c1.titular = cliente1;
 		
-		System.out.println(cliente1.documento);
-		System.out.println(c1.titular.nombre);
+		System.out.println(cliente1.getDocumento());
+		System.out.println(c1.getTitular().getNombre());
 		
 		
 		
