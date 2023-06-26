@@ -1,8 +1,43 @@
 
 public class Cuenta {
-	double saldo;
-	int numero;
-	String titular;
+	private double saldo;
+	private int numero;
+	//Referencia directamente al objeto cliente 
+	//Se instancia un cliente de manera inmediata
+	private Cliente titular = new Cliente();
+	
+	
+	//Constructor por defecto
+	public Cuenta () {
+		//saldo ;
+		
+	}
+	
+	//public Cuenta
+
+	public double getSaldo() {
+		return this.saldo;
+	}
+
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public int getNumero() {
+		return this.numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public Cliente getTitular() {
+		return this.titular;
+	}
+
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
 
 	// Comportamiento para depositar de la misma cuenta
 	public void depositar(double valor) {
@@ -21,13 +56,14 @@ public class Cuenta {
 	}
 
 	// Comportamiento para transferir de una cuenta a otra
-	// Se pasa la refencia del objeto cuenta para acceder a las informaciones del objeto en memoria
+	// Se pasa la refencia del objeto cuenta para acceder a las informaciones del
+	// objeto en memoria
 	public boolean transferir(double valor, Cuenta cuenta) {
 		System.out.println("----------- Transferencia a la cuenta No. " + cuenta.numero + " ----------");
 		// boolean operacion;
 		if (this.saldo >= valor) {
 			cuenta.depositar(valor);
-			//this.saldo -= valor;
+			// this.saldo -= valor;
 			retirar(valor);
 			System.out.println("Transacción exitosa");
 			return true;
@@ -37,7 +73,7 @@ public class Cuenta {
 			System.out.println("Transacción no realizada");
 			return false;
 		}
-		//return operacion;
+		// return operacion;
 	}
 
 }

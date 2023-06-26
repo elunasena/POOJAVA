@@ -4,8 +4,8 @@ public class TestReferencia {
 	public static void main(String[] args) {
 
 		Cuenta c1 = new Cuenta();
-		c1.saldo = 100;
-		c1.numero = 123;
+		//c1.saldo = 100;
+		//c1.numero = 123;
 		
 		Cuenta c2 = new Cuenta();
 		System.out.println("REF c1: " + c1);
@@ -15,13 +15,13 @@ public class TestReferencia {
 		//Esto hace que ambos hagan referencia al mismo valor de la memoria
 		c1 = c2;
 		
-		c2.numero = 234;
-		c2.saldo = 50;
+		//c2.numero = 234;
+		//c2.saldo = 50;
 		
 		System.out.println("REF c1: " + c1);
 		System.out.println("REF c2: " + c2);
 		
-		System.out.println(c1.saldo);
+		//System.out.println(c1.saldo);
 
 	}
 
