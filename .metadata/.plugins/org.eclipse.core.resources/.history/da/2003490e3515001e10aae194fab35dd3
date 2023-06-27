@@ -21,8 +21,7 @@ public class Cuenta {
 		total++;
 	}
 	
-	//Metodo estático para consultar el número de cuentas desde la clase Cuenta...
-	//Cuenta.getTotal();
+	//Metodo estático para consultar el número de cuentas creadas
 	public static int getTotal() {
 		return total;
 	}

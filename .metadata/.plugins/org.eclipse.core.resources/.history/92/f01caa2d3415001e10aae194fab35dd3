@@ -7,7 +7,6 @@ public class Cuenta {
 	private Cliente titular = new Cliente();
 	//Variable de la clase, noo de la instancia.
 	//variable en común de todas las instancias
-	//Contador que suma haciendo uso del constructor con parámetros
 	private static int total = 0;
 	
 	
@@ -19,12 +18,6 @@ public class Cuenta {
 		this.numero = numero;
 		this.saldo = saldo;
 		total++;
-	}
-	
-	//Metodo estático para consultar el número de cuentas desde la clase Cuenta...
-	//Cuenta.getTotal();
-	public static int getTotal() {
-		return total;
 	}
 
 	public double getSaldo() {
@@ -86,6 +79,10 @@ public class Cuenta {
 			return false;
 		}
 		// return operacion;
+	}
+	
+	public int getTotal() {
+		return total;
 	}
 
 }
